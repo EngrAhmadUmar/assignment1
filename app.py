@@ -19,7 +19,10 @@ def matchingSocks(socks):
         #get the number of pairs of that color.
         pairs += pairsofsocks[pair] // 2
         
-    return "The total number of pairs in this pile is " + str(pairs) + "."
+    if pairs == 0:
+        return "The total number of pairs in this pile is " + str(pairs) + "."
+    else:
+        return "The total number of pairs in this pile is 0."
     
 #Initializing the first test which contains 30 elements and 10 pairs
 socks1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,10]
